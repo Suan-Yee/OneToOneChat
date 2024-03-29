@@ -53,6 +53,7 @@ public class ChatController {
     public ResponseEntity<List<ChatMessage>> findChatMessages(@PathVariable Long senderId,
                                                               @PathVariable Long recipientId){
         log.info("Sender id :{} and recipient id {}",senderId,recipientId);
+        System.out.println("ha ha ha");
         return ResponseEntity.ok(chatMessageService.findChatMessages(senderId,recipientId));
     }
 }
