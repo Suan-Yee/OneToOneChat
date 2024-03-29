@@ -27,6 +27,7 @@ public class ChatController {
     @MessageMapping("/chat")
     public void processMessage(@Payload UserInfo userInfo){
         log.info("Hello this is me from chatController");
+        System.err.println("hello");
         User sender = userService.findById(userInfo.getSenderId());
         User recipient = userService.findById(userInfo.getRecipientId());
 
