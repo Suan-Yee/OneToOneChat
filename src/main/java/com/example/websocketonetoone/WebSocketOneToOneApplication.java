@@ -15,7 +15,6 @@ public class WebSocketOneToOneApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(WebSocketOneToOneApplication.class, args);
-        System.err.println("hello");
 
     }
 
